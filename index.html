@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Even or Odd Checker</title>
 </head>
 <body>
+
+    <div class="container">
+      <h2>Even / Odd Checker</h2>
+      <input type="number" id="numberInput" placeholder="Enter a number" />
+      <br />
+      <button onclick="checkNumber()">Check</button>
+
+      <div class="result" id="result"></div>
+    </div>
     
+    <script src="script.js"></script>
 </body>
-<script>
-    //checked number// 
-   let number = prompt('Enter your number');
-   let value = number % 2;
-   if(value == 0){
-    document.write(alert('your number is even : ' + number))
-   }else{
-    document.write(alert('your number is odd : ' + number))
-   }
-</script>
-</html>        
+</html>
